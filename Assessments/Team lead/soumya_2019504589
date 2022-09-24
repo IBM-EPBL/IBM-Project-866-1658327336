@@ -1,0 +1,20 @@
+import random
+import time
+
+x = 0
+while (x < 100):
+    temp = random.randrange(0, 70)
+    moist = random.randrange(0, 150)
+    print( "celcius:",temp, "moisture:" ,moist )
+    if (temp > 52):
+        print("   High Temperature")
+    elif (temp <= 52):
+        print("   Low Temperature")
+
+    if (moist > 90):
+        print("   Very Humid Weather")
+    elif (moist <= 90):
+        print("   Very Dry Weather")
+
+    x += 1
+    time.sleep(3)
